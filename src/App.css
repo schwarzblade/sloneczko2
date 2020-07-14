@@ -353,6 +353,7 @@ h6 {
 .img-container:hover .room-link {
   transform: translate(-50%, -50%) scale(1);
 }
+
 .room-info {
   background: var(--darkGrey);
   text-transform: capitalize;
