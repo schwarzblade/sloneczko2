@@ -69,7 +69,7 @@ export default class SingleRoom extends Component {
             <h6>powierzchnia:{size} m&sup2;</h6>
             <h6>
               Ilośc mijesc:
-              {capacity >= 1 ? `${capacity} osoby` : `${capacity} osobowy`}
+              {capacity > 1 ? `${capacity} osoby` : `${capacity} osobowy`}
             </h6>
             <h6>Zwierzęta: {pets ? "dozwolone " : "nie dozwolone"}</h6>
             <h6>Śniadanie: {breakfast && "Za dopłatą 20 PLN "}</h6>
