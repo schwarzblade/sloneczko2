@@ -14,7 +14,7 @@ export const Rooms = () => {
           </Link>
         </Banner>
       </Hero>
-      <RoomsContainer></RoomsContainer>
+      <RoomsContainer />
     </>
   );
 };

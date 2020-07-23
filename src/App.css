@@ -133,7 +133,7 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  height: 150px;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -494,12 +494,26 @@ h6 {
 .size-inputs {
   display: flex;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 .size-input {
   width: 40%;
   padding: 0.2rem;
   border: 1px solid var(--mainBlack);
   border-radius: 0.3rem;
   margin-right: 0.3rem;
+}
+.single-extra {
+  display: flex;
 }
 .single-extra label {
   display: inline-block;
