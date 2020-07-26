@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { FaRoad, FaPhone, FaEnvelope } from "react-icons/fa";
+import Recaptcha from "react-recaptcha";
+
 export default class ContactForm extends Component {
   state = {
     name: "",
     email: "",
     message: "",
-    sent: false,
+    isVerifide: false,
     buttonText: "wyslij",
   };
 
@@ -27,9 +29,10 @@ export default class ContactForm extends Component {
               </li>
             </ul>
             <h3>Nr konta:</h3>
-            <p>
-              PKO Bank Polski SA <br /> 21 1020 3453 0000 8302 0303 2273
-            </p>
+            <ul>
+              <li> PKO Bank Polski SA</li>
+              <li>21 1020 3453 0000 8302 0303 2273</li>
+            </ul>
           </div>
           <div className="contact">
             <h3>Napisz do nas!</h3>
@@ -37,6 +40,7 @@ export default class ContactForm extends Component {
               <p>
                 <label>Imię</label>
                 <input
+                  id="nameValid"
                   type="text"
                   name="name"
                   onChange={(e) => this.setState({ name: e.target.value })}
@@ -46,7 +50,8 @@ export default class ContactForm extends Component {
               <p>
                 <label>Twój Email</label>
                 <input
-                  type="email"
+                  id="emailValid"
+                  type="text"
                   name="email"
                   onChange={(e) => this.setState({ email: e.target.value })}
                   value={this.state.email}
@@ -55,13 +60,21 @@ export default class ContactForm extends Component {
               <p className="full">
                 <label>Wiadomość</label>
                 <textarea
+                  id="messageValid"
                   name="message"
                   rows="5"
                   onChange={(e) => this.setState({ message: e.target.value })}
                   value={this.state.message}
                 ></textarea>
               </p>
-
+              <p className="recaptcha" id="recaptcha">
+                <Recaptcha
+                  sitekey="6LcAZLYZAAAAAHkDi3sEZ8m9sNqJ4S-vFZWUTbLE"
+                  render="explicit"
+                  onloadCallback={this.recaptchaLoaded}
+                  verifyCallback={this.verifyCallback}
+                />
+              </p>
               <p className="full">
                 <button>{this.state.buttonText}</button>
               </p>
@@ -72,9 +85,48 @@ export default class ContactForm extends Component {
     );
   }
 
+  validForm = (state) => {
+    const { name, email, message, isVerifide } = state;
+    console.log(name.length);
+    if (name.length === 0) {
+      document.getElementById("nameValid").classList.add("formError");
+      setTimeout(() => {
+        document.getElementById("nameValid").classList.remove("formError");
+      }, 3000);
+    }
+    if (email.length === 0) {
+      document.getElementById("emailValid").classList.add("formError");
+      setTimeout(() => {
+        document.getElementById("emailValid").classList.remove("formError");
+      }, 3000);
+    }
+    if (message.length === 0) {
+      document.getElementById("messageValid").classList.add("formError");
+      setTimeout(() => {
+        document.getElementById("messageValid").classList.remove("formError");
+      }, 3000);
+    }
+    if (!isVerifide) {
+      document.getElementById("recaptcha").classList.add("formError");
+      setTimeout(() => {
+        document.getElementById("recaptcha").classList.remove("formError");
+      }, 3000);
+    }
+  };
+
+  verifyCallback = (response) => {
+    if (response) {
+      this.setState({
+        isVerifide: true,
+      });
+    }
+  };
+
+  recaptchaLoaded = () => {};
+
   formSubmit = (e) => {
     e.preventDefault();
-
+    this.validForm(this.state);
     const templateId = "template_id";
 
     this.sendFeedback(templateId, {
