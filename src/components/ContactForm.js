@@ -51,7 +51,7 @@ export default class ContactForm extends Component {
                 <label>Twój Email</label>
                 <input
                   id="emailValid"
-                  type="text"
+                  type="email"
                   name="email"
                   onChange={(e) => this.setState({ email: e.target.value })}
                   value={this.state.email}
