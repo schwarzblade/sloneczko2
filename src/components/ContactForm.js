@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaRoad, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaRoad, FaPhone, FaEnvelope, FaDollarSign } from "react-icons/fa";
 import Recaptcha from "react-recaptcha";
 
 export default class ContactForm extends Component {
@@ -30,8 +30,9 @@ export default class ContactForm extends Component {
             </ul>
             <h3>Nr konta:</h3>
             <ul>
-              <li> PKO Bank Polski SA</li>
-              <li>21 1020 3453 0000 8302 0303 2273</li>
+              <FaDollarSign className="dolar" />
+              <li className="marginLeft">PKO Bank Polski SA</li>
+              <li className="marginLeft">21 1020 3453 0000 8302 0303 2273</li>
             </ul>
           </div>
           <div className="contact">

@@ -681,6 +681,15 @@ ul {
   .brand {
     text-align: left;
   }
+
+  .dolar {
+    position: absolute;
+    transform: translateY(70%);
+  }
+
+  .marginLeft {
+    margin-left: 20px;
+  }
 }
 /*form end*/
 
