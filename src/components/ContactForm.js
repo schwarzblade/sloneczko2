@@ -31,8 +31,10 @@ export default class ContactForm extends Component {
             <h3>Nr konta:</h3>
             <ul>
               <FaDollarSign className="dolar" />
-              <li className="marginLeft">PKO Bank Polski SA</li>
-              <li className="marginLeft">21 1020 3453 0000 8302 0303 2273</li>
+              <li className="marginLeft">
+                PKO Bank Polski SA <br />
+                21 1020 3453 0000 8302 0303 2273
+              </li>
             </ul>
           </div>
           <div className="contact">
