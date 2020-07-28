@@ -761,17 +761,25 @@ ul {
   grid-template-columns: 1fr;
   background: var(--darkGrey);
 }
-.footer .logo img {
-  margin-top: 15%;
-}
+
 .socialMedia {
-  display: flex;
-  justify-content: start;
+  margin-left: 15px;
 }
+
 .socialMedia span {
   display: inline-block;
   color: var(--primaryColor);
   font-size: 2.5rem;
+}
+
+.footerNav {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 15px;
+}
+.footerNav a {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 799px) {
@@ -794,4 +802,12 @@ ul {
     font-size: 2.5rem;
   }
 }
+
+.footerInfo {
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
 /*footer end*/
