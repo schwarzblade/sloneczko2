@@ -721,7 +721,7 @@ ul {
 }
 
 .pin-icon {
-  font-size: 4rem;
+  font-size: 2rem;
   color: red;
 }
 
@@ -745,7 +745,53 @@ ul {
 
   .pin-icon {
     color: red;
-    font-size: 10vw;
+    font-size: 5vw;
   }
 }
 /*map end */
+
+/*footer*/
+.socialMedia span a:hover {
+  color: blue;
+  transition: var(--mainTransition);
+  box-shadow: var(--lightShadow);
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--darkGrey);
+}
+.footer .logo img {
+  margin-top: 15%;
+}
+.socialMedia {
+  display: flex;
+  justify-content: start;
+}
+.socialMedia span {
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 799px) {
+  .footer {
+    margin-top: 3rem;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: var(--darkGrey);
+  }
+
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .socialMedia span {
+    display: inline-block;
+    color: var(--primaryColor);
+    font-size: 2.5rem;
+  }
+}
+/*footer end*/

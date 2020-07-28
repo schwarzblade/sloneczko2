@@ -1,18 +1,13 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import Map from "../components/Map";
-
-const location = {
-  //address: "JAK U MAMY-SŁONECZKO",
-  lat: 49.67484,
-  lng: 20.05593,
-};
+import location from "../components/location";
 
 function Contact() {
   return (
     <>
       <ContactForm />;
-      <Map location={location} zoomLevel={17} />
+      <Map location={location} zoomLevel={15} />
     </>
   );
 }
