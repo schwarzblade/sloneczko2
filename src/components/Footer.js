@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.svg";
 import { FaFacebookSquare } from "react-icons/fa";
-import { BsArrowReturnRight } from "react-icons/bs";
+import { BsArrowBarRight } from "react-icons/bs";
 
 import bookig from "../images/booking5.png";
 
@@ -24,14 +24,14 @@ export default function Footer() {
           <ul className="footerNav">
             <li>
               
-              <Link to="/"><BsArrowReturnRight/> Home</Link>
+              <Link to="/"><BsArrowBarRight/> Home</Link>
             </li>
             <li>
            
-              <Link to="/rooms"><BsArrowReturnRight/> Pokoje</Link>
+              <Link to="/rooms"><BsArrowBarRight/> Pokoje</Link>
             </li>
             <li>
-              <Link to="/contact"><BsArrowReturnRight/>Kontakt</Link>
+              <Link to="/contact"><BsArrowBarRight/> Kontakt</Link>
             </li>
           </ul>
         </div>
