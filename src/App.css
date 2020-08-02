@@ -751,10 +751,19 @@ ul {
 /*map end */
 
 /*footer*/
-.socialMedia span a:hover {
-  color: blue;
-  transition: var(--mainTransition);
-  box-shadow: var(--lightShadow);
+.socialMedia span{
+  height: 35px;
+}
+
+.socialMedia h3 {
+  margin-bottom: 0;
+}
+.socialMedia span:hover {
+border-top-right-radius: 10px;
+transition: box-shadow .5s ease-in-out; 
+-webkit-box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
 }
 .footer {
   display: grid;
@@ -780,6 +789,10 @@ ul {
 .footerNav a {
   text-decoration: none;
   color: black;
+}
+
+.footerNav li a:hover {
+  color:blue;
 }
 
 @media screen and (min-width: 799px) {
