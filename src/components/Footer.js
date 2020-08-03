@@ -27,7 +27,6 @@ export default function Footer() {
               <Link to="/"><BsArrowBarRight/> Home</Link>
             </li>
             <li>
-           
               <Link to="/rooms"><BsArrowBarRight/> Pokoje</Link>
             </li>
             <li>

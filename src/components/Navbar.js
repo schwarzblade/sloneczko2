@@ -7,6 +7,11 @@ export default class Navbar extends Component {
   state = {
     isOpen: false,
   };
+
+  closeMenu= () => {
+    this.setState({isOpen:false});
+  }
+
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
@@ -30,13 +35,13 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={()=>this.closeMenu()}>Home</Link>
             </li>
             <li>
-              <Link to="/rooms">Pokoje</Link>
+              <Link to="/rooms" onClick={()=>this.closeMenu()} >Pokoje</Link>
             </li>
             <li>
-              <Link to="/contact">Kontakt</Link>
+              <Link to="/contact" onClick={()=>this.closeMenu()}>Kontakt</Link>
             </li>
           </ul>
         </div>
