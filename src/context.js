@@ -27,6 +27,7 @@ class RoomProvider extends Component {
     let featuredRooms = rooms.filter((room) => room.featured === true);
     let maxPrice = Math.max(...rooms.map((item) => item.price));
     let maxSize = Math.max(...rooms.map((item) => item.size));
+    let minPrice = Math.min(...rooms.map((item) => item.price));
     this.setState({
       rooms,
       featuredRooms,
@@ -35,6 +36,7 @@ class RoomProvider extends Component {
       price: maxPrice,
       maxSize,
       maxPrice,
+      minPrice,
     });
   }
 
