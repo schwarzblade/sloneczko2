@@ -7,7 +7,9 @@ export default function Room({ room }) {
   return (
     <article className="room">
       <div className="img-container">
-        <img src={images[0]} alt="pokój pojedynczy" />
+        <div class="img-hover-zoom">
+          <img src={images[0]} alt="pokój pojedynczy" />
+        </div>
         <div className="price-top">
           <h6>Cena: PLN{price}</h6>
           <p>za noc</p>

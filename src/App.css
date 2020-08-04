@@ -107,6 +107,7 @@ h6 {
   cursor: pointer;
   outline: none;
 }
+
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
@@ -751,7 +752,7 @@ ul {
 /*map end */
 
 /*footer*/
-.socialMedia span{
+.socialMedia span {
   height: 35px;
 }
 
@@ -759,11 +760,11 @@ ul {
   margin-bottom: 0;
 }
 .socialMedia span:hover {
-border-top-right-radius: 10px;
-transition: box-shadow .5s ease-in-out; 
--webkit-box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
+  border-top-right-radius: 10px;
+  transition: box-shadow 0.5s ease-in-out;
+  -webkit-box-shadow: 10px -12px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px -12px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px -12px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .footer {
   display: grid;
@@ -792,7 +793,7 @@ box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
 }
 
 .footerNav li a:hover {
-  color:blue;
+  color: blue;
 }
 .socialMedia {
   margin-top: 3rem;
@@ -802,10 +803,8 @@ box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
   margin-left: 2rem;
 }
 
-
 @media screen and (min-width: 799px) {
   .footer {
-    margin-top: 3rem;
     height: 30vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -816,7 +815,7 @@ box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top:0;
+    margin-top: 0;
   }
   .socialMedia span {
     display: inline-block;
@@ -833,3 +832,17 @@ box-shadow: 10px -12px 5px 0px rgba(0,0,0,0.75);
 }
 
 /*footer end*/
+.img-hover-zoom {
+  /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
