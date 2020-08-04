@@ -180,7 +180,7 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: animeBanner;
 }
 .banner h1 {
@@ -855,7 +855,7 @@ ul {
 .children {
   animation-name: text;
   animation-delay: 1s;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
 }
 
 .children {
@@ -864,11 +864,9 @@ ul {
 
 @keyframes text {
   from {
-    opacity: 0;
     transform: translateX(+3343px);
   }
   to {
-    opacity: 1;
     transform: translateX(0px);
   }
 }
