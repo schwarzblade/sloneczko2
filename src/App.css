@@ -849,10 +849,16 @@ ul {
 .img-hover-zoom:hover img {
   transform: scale(1.5);
 }
-.title,
+
 .line,
 .subtitle,
 .children {
+  animation-name: animeOpacity;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.title {
   animation-name: text;
   animation-delay: 1s;
   animation-duration: 1.5s;
@@ -860,6 +866,31 @@ ul {
 
 .children {
   display: inline-block;
+}
+@keyframes animeOpacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animeText {
+  animation-name: text;
+  animation-duration: 2s;
 }
 
 @keyframes text {
