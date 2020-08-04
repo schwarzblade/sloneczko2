@@ -179,6 +179,9 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+
+  animation-duration: 3s;
+  animation-name: animeBanner;
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -845,4 +848,36 @@ ul {
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
   transform: scale(1.5);
+}
+.title,
+.line,
+.subtitle,
+.children {
+  animation-name: text;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.children {
+  display: inline-block;
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+    transform: translateX(+3343px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animeBanner {
+  from {
+    transform: translateY(-3333px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
