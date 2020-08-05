@@ -1,23 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import logo from "../images/logo.svg";
 import { FaAlignRight, FaHamburger } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Burger from "./Burger/Burger";
+import styled from "styled-components";
+import Menu from "./Menu/Menu";
 
-export default class Navbar extends Component {
-  state = {
-    isOpen: false,
-  };
+import { theme } from "../theme";
+import { ThemeProvider } from "styled-components";
 
-  closeMenu = () => {
-    this.setState({ isOpen: false });
-  };
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
-  handleToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  };
-
-  render() {
-    return (
+  return (
+    <>
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
@@ -25,35 +21,32 @@ export default class Navbar extends Component {
               <img src={logo} alt="SŁONECZKO-Jak u Mamy" />
             </Link>
 
-            <button
-              onClick={this.handleToggle}
-              type="button"
-              className="nav-btn"
-            >
-              <FaAlignRight className="nav-icon" />
-            </button>
+            <div className="hamburgerMenu">
+              {" "}
+              <Burger open={open} setOpen={setOpen} />
+              <Menu open={open} setOpen={setOpen} />
+            </div>
           </div>
-          <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-          >
+          <ul className="nav-links">
             <li>
-              <Link to="/" onClick={() => this.closeMenu()}>
-                Home
-              </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/rooms" onClick={() => this.closeMenu()}>
-                Pokoje
-              </Link>
+              <Link to="/rooms">Pokoje</Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => this.closeMenu()}>
-                Kontakt
-              </Link>
+              <Link to="/contact">Kontakt</Link>
             </li>
           </ul>
         </div>
       </nav>
-    );
-  }
-}
+      <div className="hamburgerMenu">
+        {" "}
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
