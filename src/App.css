@@ -804,12 +804,20 @@ ul {
 .socialMedia {
   margin-top: 3rem;
 }
+.socialMedia div {
+  margin-top: 1rem;
+}
 
 .socialMedia span:nth-child(3) {
-  margin-left: 2rem;
+  margin-left: 0rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 799px) {
+  .socialMedia span:nth-child(3) {
+    margin-left: 2rem;
+  }
+
   .footer {
     height: 30vh;
     display: grid;

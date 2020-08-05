@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.svg";
-import { FaFacebookSquare } from "react-icons/fa";
-import { BsArrowBarRight } from "react-icons/bs";
 
+import { BsArrowBarRight } from "react-icons/bs";
+import { FaFacebookSquare } from "react-icons/fa";
 import bookig from "../images/booking5.png";
 
 export default function Footer() {
@@ -23,14 +23,19 @@ export default function Footer() {
           </ul>
           <ul className="footerNav">
             <li>
-              
-              <Link to="/"><BsArrowBarRight/> Home</Link>
+              <Link to="/">
+                <BsArrowBarRight /> Home
+              </Link>
             </li>
             <li>
-              <Link to="/rooms"><BsArrowBarRight/> Pokoje</Link>
+              <Link to="/rooms">
+                <BsArrowBarRight /> Pokoje
+              </Link>
             </li>
             <li>
-              <Link to="/contact"><BsArrowBarRight/> Kontakt</Link>
+              <Link to="/contact">
+                <BsArrowBarRight /> Kontakt
+              </Link>
             </li>
           </ul>
         </div>
@@ -38,11 +43,28 @@ export default function Footer() {
 
       <div className="socialMedia">
         <h3>Szukaj nas na:</h3>
-        <span>
-          <a href="https://www.facebook.com/SloneczkoJakUMamy/">
-            <FaFacebookSquare />
-          </a>
-        </span>
+
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/SloneczkoJakUMamy/"
+          data-tabs=""
+          data-width=""
+          data-height=""
+          data-small-header="false"
+          data-adapt-container-width="false"
+          data-hide-cover="false"
+          data-show-facepile="false"
+        >
+          <blockquote
+            cite="https://www.facebook.com/SloneczkoJakUMamy/"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/SloneczkoJakUMamy/">
+              Dom Wypoczynkowy Słoneczko
+            </a>
+          </blockquote>
+        </div>
+
         <span>
           <a href="https://www.booking.com/hotel/pl/osrodek-wypoczynkowy-quot-jak-u-mamy-quot.pl.html">
             <img src={bookig} />
