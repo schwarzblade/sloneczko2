@@ -67,7 +67,7 @@ export default function Footer() {
 
         <span>
           <a href="https://www.booking.com/hotel/pl/osrodek-wypoczynkowy-quot-jak-u-mamy-quot.pl.html">
-            <img src={bookig} />
+            <img src={bookig} alt="bookingLogo" />
           </a>
         </span>
       </div>
