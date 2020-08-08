@@ -8,21 +8,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
+
   componentDidMount() {
-    const featured1 = document.getElementsByClassName(
-      "featured-rooms-center"
-    )[0];
-    const featured2 = document.getElementsByClassName(
-      "featured-rooms-center"
-    )[1];
-    const featured3 = document.getElementsByClassName(
-      "featured-rooms-center"
-    )[2];
+    const featured1 = document.getElementsByClassName("featured-rooms-center");
 
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.fromTo(
-      [featured1, featured2, featured3],
+      featured1,
       {
         y: "+=100",
         opacity: 0,
@@ -43,8 +36,8 @@ export default class FeaturedRooms extends Component {
 
   render() {
     let { loading, featuredRooms: rooms } = this.context;
-    rooms = rooms.map((room, index) => {
-      return <Room key={room.id} room={room} id={index} />;
+    rooms = rooms.map((room) => {
+      return <Room key={room.id} room={room} />;
     });
     return (
       <section className="featured-rooms">

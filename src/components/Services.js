@@ -33,7 +33,6 @@ const state = {
 };
 export default function Services() {
   useEffect(() => {
-    const footer = document.getElementsByClassName("footer");
     const serviceItem1 = document.getElementById("0");
     const serviceItem2 = document.getElementById("1");
     const serviceItem3 = document.getElementById("2");
