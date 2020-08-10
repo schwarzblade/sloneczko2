@@ -31,6 +31,7 @@ export default [
       pets: true,
       breakfast: true,
       featured: false,
+      balcony: true,
       description:
         "Pokój nr.1 wyposoażony jest w 3 1-osobowe łóżka. Na wyposażeniu pokoju szafa, komoda, szafki nocle przy łózkach. W pokoju znajduje sie prywatna łazienka(prysznic,umywalka,toaleta), TV, czajnik bezprzewodowy. Pokoj jest wykonczony w drenie. Jes bardzo ciepły. DArmowy dostęp do Wi-Fi",
       extras: [

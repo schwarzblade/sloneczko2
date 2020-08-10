@@ -392,9 +392,7 @@ h6 {
 .info {
   margin: 1rem 0 0 5rem;
 }
-.desc {
-  margin: 1rem 0;
-}
+
 .desc h3 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
@@ -413,7 +411,7 @@ h6 {
 }
 .room-extras {
   width: 80vw;
-  margin: 2rem 0 3rem 4rem;
+  margin: 2rem 0 3rem 0rem;
 }
 .room-extras h6 {
   text-transform: capitalize;
@@ -421,11 +419,13 @@ h6 {
 }
 .extras {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
+.extras > li {
+  padding-top: 1rem;
+}
+
 @media screen and (max-width: 992px) {
   .single-room-images,
   .single-room-info,
