@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -54,7 +56,18 @@ export default class SingleRoom extends Component {
         <section className="single-room">
           <div className="single-room-images">
             {defaultImg.map((item, index) => {
-              return <img key={index} src={item} alt={name} />;
+              return (
+                <Zoom>
+                  {" "}
+                  <img
+                    key={index}
+                    src={item}
+                    alt={name}
+                    width="100%"
+                    height="100%"
+                  />
+                </Zoom>
+              );
             })}
           </div>
         </section>
