@@ -9,8 +9,8 @@ const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open} onClick={() => setOpen(!open)}>
       <Link className="linkItems" to="/">
-        <span role="img" aria-label="about us">
-          &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;
+        <span role="img" aria-label="home">
+          🏠
         </span>
         Home
       </Link>
@@ -24,6 +24,12 @@ const Menu = ({ open, setOpen }) => {
           &#x1f4e9;{" "}
         </span>
         Kontakt
+      </Link>
+      <Link className="linkItems" to="/aboutus">
+        <span role="img" aria-label="about us">
+          &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;
+        </span>
+        O nas
       </Link>
       <div className="socialMedia">
         <span>
