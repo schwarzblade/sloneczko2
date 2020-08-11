@@ -473,7 +473,7 @@ export default [
     fields: {
       name: "family economy",
       slug: "family-economy",
-      type: "",
+      type: "1-osobowy",
       price: 300,
       size: 500,
       capacity: 3,
@@ -530,7 +530,7 @@ export default [
     fields: {
       name: "family basic",
       slug: "family-basic",
-      type: "",
+      type: "1-osobowy",
       price: 350,
       size: 550,
       capacity: 4,
@@ -587,7 +587,7 @@ export default [
     fields: {
       name: "family standard",
       slug: "family-standard",
-      type: "",
+      type: "1-osobowy",
       price: 400,
       size: 600,
       capacity: 5,
@@ -644,7 +644,7 @@ export default [
     fields: {
       name: "family deluxe",
       slug: "family-deluxe",
-      type: "",
+      type: "1-osobowy",
       price: 500,
       size: 700,
       capacity: 6,
@@ -701,7 +701,7 @@ export default [
     fields: {
       name: "",
       slug: "presidential-room",
-      type: "",
+      type: "1-osobowy",
       price: 600,
       size: 1000,
       capacity: 10,
