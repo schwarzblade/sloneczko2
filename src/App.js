@@ -11,6 +11,7 @@ import { Route, Switch } from "react-router-dom";
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
+import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/rooms/" component={Rooms} />
           <Route exact path="/rooms/:slug" component={SingleRoom} />
           <Route exact path="/contact/" component={Contact} />
+          <Route exact path="/aboutus" component={AboutUs} />
           <Route component={Error} />
         </Switch>
         <Footer />

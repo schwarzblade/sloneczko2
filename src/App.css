@@ -1032,3 +1032,9 @@ ul {
 }
 
 /*hambureger menu end*/
+
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
