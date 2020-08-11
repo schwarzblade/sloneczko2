@@ -119,7 +119,8 @@ h6 {
   list-style-type: none;
 }
 .nav-links a {
-  display: block;
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   padding: 1rem 0;
   color: var(--mainBlack);
@@ -129,10 +130,26 @@ h6 {
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
-.nav-links a:hover {
+.nav-links li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 40px;
+  left: 0;
+  background: var(--primaryColor);
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.nav-links li a:hover {
   color: var(--primaryColor);
 }
 
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .show-nav {
   height: 150px;
 }
