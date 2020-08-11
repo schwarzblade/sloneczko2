@@ -449,9 +449,10 @@ h6 {
 }
 /* end of single room*/
 /* roomlist */
-.roomslist {
-  padding: 5rem 0;
+.roomlist {
+  margin-bottom: 2rem;
 }
+
 .roomslist-center {
   width: 80vw;
   margin: 0 auto;
@@ -661,13 +662,22 @@ ul {
   transition: background-color 2s ease-out;
 }
 
+.contact form > p {
+  margin-top: 1rem;
+}
+.contact .recaptcha {
+  width: 82%;
+  margin-left: 2rem;
+}
 /* LARGE SCREENS */
 @media (min-width: 700px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-
+  .contact .recaptcha {
+    width: 91%;
+  }
   .contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;

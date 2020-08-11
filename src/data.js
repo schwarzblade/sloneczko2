@@ -417,7 +417,7 @@ export default [
     fields: {
       name: "8",
       slug: "8",
-      type: "4-osobowe",
+      type: "4-osobowy",
       price: 240,
       size: 30,
       capacity: 4,
@@ -473,7 +473,7 @@ export default [
     fields: {
       name: "family economy",
       slug: "family-economy",
-      type: "family",
+      type: "",
       price: 300,
       size: 500,
       capacity: 3,
@@ -530,7 +530,7 @@ export default [
     fields: {
       name: "family basic",
       slug: "family-basic",
-      type: "family",
+      type: "",
       price: 350,
       size: 550,
       capacity: 4,
@@ -587,7 +587,7 @@ export default [
     fields: {
       name: "family standard",
       slug: "family-standard",
-      type: "family",
+      type: "",
       price: 400,
       size: 600,
       capacity: 5,
@@ -644,7 +644,7 @@ export default [
     fields: {
       name: "family deluxe",
       slug: "family-deluxe",
-      type: "family",
+      type: "",
       price: 500,
       size: 700,
       capacity: 6,
@@ -699,9 +699,9 @@ export default [
       id: "13",
     },
     fields: {
-      name: "presidential",
+      name: "",
       slug: "presidential-room",
-      type: "presidential",
+      type: "",
       price: 600,
       size: 1000,
       capacity: 10,

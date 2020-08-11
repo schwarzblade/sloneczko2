@@ -28,7 +28,10 @@ export default function RoomsFilter({ rooms }) {
   let types = getUnique(rooms, "type");
 
   //add all
-  types = ["all", ...types];
+
+  types.map((item) => item.split(""));
+  types.sort();
+  types = ["wszystkie", ...types];
 
   //map to jsx
   types = types.map((item, index) => {
@@ -41,6 +44,8 @@ export default function RoomsFilter({ rooms }) {
 
   //get unique people
   let people = getUnique(rooms, "capacity");
+  people.sort((a, b) => a - b);
+
   people = people.map((item, index) => {
     return (
       <option key={index} value={item}>
