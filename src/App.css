@@ -255,6 +255,7 @@ h6 {
 /* services */
 .services {
   padding: 5rem 0;
+  min-height: calc(100vh - 66px);
 }
 .services {
   background: var(--darkGrey);
@@ -281,6 +282,7 @@ h6 {
   width: 80%;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 992px) {
   .services-center {
     width: 95vw;
@@ -298,6 +300,7 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
+  min-height: calc(100vh - 66px);
 }
 .featured-rooms-center {
   width: 80vw;
@@ -890,16 +893,9 @@ ul {
 
 .line,
 .subtitle,
-.children {
-  animation-name: animeOpacity;
-  animation-delay: 1s;
-  animation-duration: 2s;
-}
-
+.children,
 .title {
-  animation-name: text;
-  animation-delay: 1s;
-  animation-duration: 1.5s;
+  opacity: 0;
 }
 
 .children {

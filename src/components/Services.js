@@ -1,8 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Title from "./Title";
 import { FaUtensils, FaCocktail, FaTruck, FaMountain } from "react-icons/fa";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { useIntersection } from "react-use";
 
 const state = {
   services: [
@@ -32,40 +33,40 @@ const state = {
   ],
 };
 export default function Services() {
-  useEffect(() => {
-    const serviceItem1 = document.getElementById("0");
-    const serviceItem2 = document.getElementById("1");
-    const serviceItem3 = document.getElementById("2");
-    const serviceItem4 = document.getElementById("3");
+  const sectionRef = useRef(null);
 
-    gsap.registerPlugin(ScrollTrigger);
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3,
+  });
 
+  const fromLeft = (element) => {
     gsap.fromTo(
-      [serviceItem1, serviceItem2, serviceItem3, serviceItem4],
+      element,
+      1,
       {
-        y: "+=100",
         opacity: 0,
+        x: -500,
       },
       {
-        y: 0,
         opacity: 1,
-        stagger: 0.2,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".services",
-          start: "top 20%",
-          // markers: true,
-        },
+        x: 0,
+        duration: 2,
+        ease: "slow",
       }
     );
-  });
+  };
+
+  intersection && intersection.intersectionRatio > 0.3 && fromLeft(".fadeIn");
+
   return (
     <section className="services">
       <Title title="usługi" />
-      <div className="services-center">
+      <div ref={sectionRef} className="services-center">
         {state.services.map((item, index) => {
           return (
-            <article key={index} id={index} className="service">
+            <article key={index} id={index} className="service fadeIn">
               <span>{item.icon}</span>
               <h6>{item.title}</h6>
               <p>{item.info}</p>
