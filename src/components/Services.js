@@ -54,6 +54,7 @@ export default function Services() {
         x: 0,
         duration: 2,
         ease: "slow",
+        stagger: 0.1,
       }
     );
   };
