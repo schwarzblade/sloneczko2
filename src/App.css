@@ -1025,6 +1025,15 @@ ul {
   .hamburgerMenu {
     display: none;
   }
+
+  .fade-in {
+    animation: slideOut 1s;
+  }
+
+  .appear {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
 }
 
 /*hambureger menu end*/
@@ -1034,4 +1043,24 @@ ul {
   justify-content: center;
   align-items: center;
   z-index: 0;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(-300px);
+  }
 }
