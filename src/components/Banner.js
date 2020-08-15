@@ -22,22 +22,6 @@ export default function Banner({ children, title, subtitle }) {
     });
   };
 
-  const fromLeft = (element) => {
-    gsap.fromTo(
-      element,
-      1,
-      {
-        opacity: 0,
-        x: -500,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        ease: "slow",
-      }
-    );
-  };
   const fadeOut = (element) => {
     gsap.to(element, 1, {
       opacity: 0,
@@ -50,12 +34,9 @@ export default function Banner({ children, title, subtitle }) {
     ? fadeOut(".fadeIn")
     : fadeIn(".fadeIn");
 
-  intersection && intersection.intersectionRatio < 1
-    ? fadeOut(".fadeIn")
-    : fromLeft(".fromLeft ");
   return (
     <div ref={sectionRef} className="banner">
-      <h1 className="fromLeft title">{title}</h1>
+      <h1 className="fadeIn title">{title}</h1>
       <div className="fadeIn line"></div>
       <p className="fadeIn subtitle">{subtitle}</p>
       <span className="fadeIn children">{children}</span>

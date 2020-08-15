@@ -41,13 +41,13 @@ export default function Services() {
     threshold: 0.3,
   });
 
-  const fromLeft = (element) => {
+  const fromRight = (element) => {
     gsap.fromTo(
       element,
       1,
       {
         opacity: 0,
-        x: -500,
+        x: 500,
       },
       {
         opacity: 1,
@@ -59,7 +59,7 @@ export default function Services() {
     );
   };
 
-  intersection && intersection.intersectionRatio > 0.3 && fromLeft(".fadeIn");
+  intersection && intersection.intersectionRatio > 0.3 && fromRight(".fadeIn");
 
   return (
     <section className="services">
