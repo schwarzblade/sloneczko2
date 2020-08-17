@@ -255,7 +255,7 @@ h6 {
 /* services */
 .services {
   padding: 5rem 0;
-  min-height: calc(100vh - 66px);
+  /*min-height: calc(100vh - 66px); */
 }
 .services {
   background: var(--darkGrey);
@@ -300,7 +300,7 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
-  min-height: calc(100vh - 66px);
+  /* min-height: calc(100vh - 66px); */
 }
 .featured-rooms-center {
   width: 80vw;
@@ -846,6 +846,10 @@ ul {
 @media screen and (min-width: 799px) {
   .socialMedia span:nth-child(3) {
     margin-left: 2rem;
+  }
+
+  .logo {
+    margin-top: 3rem;
   }
 
   .footer {

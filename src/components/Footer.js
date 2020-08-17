@@ -37,6 +37,11 @@ export default function Footer() {
                 <BsArrowBarRight /> Kontakt
               </Link>
             </li>
+            <li>
+              <Link to="/aboutus">
+                <BsArrowBarRight /> O nas
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

@@ -13,10 +13,12 @@ export default class FeaturedRooms extends Component {
   componentDidMount() {
     const featured1 = document.getElementsByClassName("featured-rooms-center");
 
+    const widthThreshold = window.innerWidth > 600 ? 1 : 0.3;
+
     const faders = document.querySelectorAll(".fade-in");
     const appearOptions = {
-      threshold: 0.3,
-      rootMargin: "0px 0px 0px 0px",
+      threshold: widthThreshold,
+      rootMargin: "0px",
     };
     const appearOnScroll = new IntersectionObserver(function (
       entries,
@@ -31,7 +33,7 @@ export default class FeaturedRooms extends Component {
         }
       });
     },
-    appearOptions);
+      appearOptions);
 
     faders.forEach((fader) => {
       appearOnScroll.observe(fader);

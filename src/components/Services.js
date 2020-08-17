@@ -35,10 +35,12 @@ const state = {
 export default function Services() {
   const sectionRef = useRef(null);
 
+  const widthThreshold = window.innerWidth > 600 ? .8 : 0.3;
+
   const intersection = useIntersection(sectionRef, {
     root: null,
     rootMargin: "0px",
-    threshold: 0.3,
+    threshold: widthThreshold,
   });
 
   const fromRight = (element) => {
@@ -54,12 +56,12 @@ export default function Services() {
         x: 0,
         duration: 2,
         ease: "slow",
-        stagger: 0.1,
+
       }
     );
   };
 
-  intersection && intersection.intersectionRatio > 0.3 && fromRight(".fadeIn");
+  intersection && intersection.intersectionRatio > widthThreshold && fromRight(".fadeIn");
 
   return (
     <section className="services">

@@ -5,17 +5,20 @@ import { useIntersection } from "react-use";
 export default function Banner({ children, title, subtitle }) {
   const sectionRef = useRef(null);
 
+  const widthThreshold = window.innerWidth > 600 ? 1 : 0.3;
+  console.log(widthThreshold);
   const intersection = useIntersection(sectionRef, {
     root: null,
-    rootMargin: "20px",
-    threshold: 1,
+    rootMargin: "0px",
+    threshold: widthThreshold,
   });
 
   const fadeIn = (element) => {
     gsap.to(element, 1, {
       opacity: 1,
-      y: 10,
+      y: 0,
       ease: "power4.out",
+      delay: 2,
       stagger: {
         amount: 0.3,
       },
@@ -30,7 +33,7 @@ export default function Banner({ children, title, subtitle }) {
     });
   };
 
-  intersection && intersection.intersectionRatio < 1
+  intersection && intersection.intersectionRatio < widthThreshold
     ? fadeOut(".fadeIn")
     : fadeIn(".fadeIn");
 
