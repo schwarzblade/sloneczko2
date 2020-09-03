@@ -49,7 +49,22 @@ export default class FeaturedRooms extends Component {
       <section className="featured-rooms">
         <Title title="Pokoje" />
         <div className="featured-rooms-center fade-in">
-          {loading ? <Loading /> : rooms}
+          <p>
+            <b>Pokój 1-osobowy </b>
+            {rooms[3]}
+          </p>
+          <p>
+            <b>Pokój 2-osobowy </b>
+            {rooms[1]}
+          </p>
+          <p>
+            <b>Pokój 3-osobowy </b>
+            {rooms[0]}
+          </p>
+          <p>
+            <b>Pokój 4-osobowy </b>
+            {rooms[2]}
+          </p>
         </div>
       </section>
     );

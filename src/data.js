@@ -94,7 +94,7 @@ export default [
       capacity: 3,
       pets: true,
       breakfast: true,
-      featured: false,
+      featured: true,
       balcony: true,
       description:
         "Pokój nr.1 wyposoażony jest w 3 1-osobowe łóżka. Na wyposażeniu pokoju szafa, komoda, szafki nocle przy łózkach. W pokoju znajduje sie prywatna łazienka(prysznic,umywalka,toaleta), TV, czajnik bezprzewodowy. Pokoj jest wykonczony w drenie. Jes bardzo ciepły. DArmowy dostęp do Wi-Fi",
@@ -758,7 +758,7 @@ export default [
       name: "12",
       slug: "12",
       type: "4-osobowy",
-      price: 180,
+      price: 240,
       size: 700,
       capacity: 4,
       pets: true,
@@ -1142,42 +1142,42 @@ export default [
         {
           fields: {
             file: {
-              url: room17_1,
+              url: "",
             },
           },
         },
         {
           fields: {
             file: {
-              url: room17_2,
+              url: "",
             },
           },
         },
         {
           fields: {
             file: {
-              url: room17_3,
+              url: "",
             },
           },
         },
         {
           fields: {
             file: {
-              url: room17_4,
+              url: "",
             },
           },
         },
         {
           fields: {
             file: {
-              url: room17_5,
+              url: "",
             },
           },
         },
         {
           fields: {
             file: {
-              url: room17_6,
+              url: "",
             },
           },
         },

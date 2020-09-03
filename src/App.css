@@ -101,6 +101,7 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-btn {
   background: transparent;
   border: none;
@@ -154,6 +155,9 @@ h6 {
   height: 150px;
 }
 @media screen and (min-width: 768px) {
+  .nav-header img {
+    margin-left: -250px;
+  }
   .nav-btn {
     display: none;
   }
@@ -314,7 +318,7 @@ h6 {
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
     width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
@@ -890,12 +894,12 @@ ul {
 .img-hover-zoom {
   /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  height: 19vh;
 }
 
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform 0.5s ease;
+  height: 20vh;
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
