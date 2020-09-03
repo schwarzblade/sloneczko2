@@ -18,7 +18,7 @@ export default function Banner({ children, title, subtitle }) {
       opacity: 1,
       x: 0,
       ease: "power4.out",
-      delay: 2,
+      delay: 1.2,
       stagger: {
         amount: 0.3,
       },

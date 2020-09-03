@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <>
       <Hero>
-        <Banner title="Dom wczasowy" subtitle="słoneczko - jak u mamy">
+        <Banner title="Dom wypoczynkowy" subtitle="słoneczko - jak u mamy">
           <Link to="/rooms" className="btn-primary">
             nasze pokoje
           </Link>
