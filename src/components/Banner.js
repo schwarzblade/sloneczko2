@@ -16,7 +16,7 @@ export default function Banner({ children, title, subtitle }) {
   const fadeIn = (element) => {
     gsap.to(element, 1, {
       opacity: 1,
-      y: 0,
+      x: 0,
       ease: "power4.out",
       delay: 2,
       stagger: {
@@ -28,7 +28,7 @@ export default function Banner({ children, title, subtitle }) {
   const fadeOut = (element) => {
     gsap.to(element, 1, {
       opacity: 0,
-      y: -30,
+      x: -300,
       ease: "power4.out",
     });
   };

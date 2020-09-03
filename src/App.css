@@ -826,9 +826,13 @@ ul {
 .footerNav a {
   text-decoration: none;
   color: black;
+  position: relative;
+  transition: left ease-in 0.3s;
+  left: 0;
 }
 
 .footerNav li a:hover {
+  left: 10px;
   color: blue;
 }
 .socialMedia {
