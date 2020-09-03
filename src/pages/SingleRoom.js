@@ -47,7 +47,7 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledHero img={mainImg}>
-          <Banner title={`${name} pokój`}>
+          <Banner title={` pokój nr ${name}`}>
             <Link to="/rooms" className="btn-primary">
               Powrót do pokoi
             </Link>
