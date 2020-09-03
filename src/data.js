@@ -566,22 +566,20 @@ export default [
       name: "9",
       slug: "9",
       type: "1-osobowy",
-      price: 300,
+      price: 180,
       size: 500,
       capacity: 3,
       pets: false,
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 9 wyposoażony jest w 2 1-osobowe łóżka. Na wyposażeniu pokoju szafa, komoda, szafki nocle przy łózkach. W pokoju znajduje sie prywatna łazienka(prysznic,umywalka,toaleta), TV, czajnik bezprzewodowy. Pokoj jest wykonczony w drenie. Jes bardzo ciepły. DArmowy dostęp do Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -630,15 +628,13 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 10 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, WI-FI.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -687,15 +683,13 @@ export default [
       breakfast: false,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 11 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, WI-FI.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -765,15 +759,13 @@ export default [
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 12 wyposażony jest w 4 1-osobowe łóżka ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -829,15 +821,13 @@ export default [
       breakfast: true,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 13 wyposażony jest w 2 1-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -886,15 +876,13 @@ export default [
       breakfast: true,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 14 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -943,15 +931,13 @@ export default [
       breakfast: true,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 15 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -1000,15 +986,13 @@ export default [
       breakfast: true,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 16 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -1057,15 +1041,13 @@ export default [
       breakfast: true,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 17 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
@@ -1128,15 +1110,13 @@ export default [
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pokój nr 18 wyposażony jest w 1 1-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, Wi-Fi.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Poduszki typu 'jaś'",
+        "Miekkie , duże rećżniki kompielowe",
+        "Wi-Fi",
+        "Duze łózka z wygodnymi materacami",
+        "Antyalergiczna pościel",
       ],
       images: [
         {
