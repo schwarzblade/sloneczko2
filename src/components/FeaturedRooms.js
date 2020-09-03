@@ -18,7 +18,7 @@ export default class FeaturedRooms extends Component {
     const faders = document.querySelectorAll(".fade-in");
     const appearOptions = {
       threshold: widthThreshold,
-      rootMargin: "0px",
+      rootMargin: "20px",
     };
     const appearOnScroll = new IntersectionObserver(function (
       entries,
@@ -33,7 +33,7 @@ export default class FeaturedRooms extends Component {
         }
       });
     },
-      appearOptions);
+    appearOptions);
 
     faders.forEach((fader) => {
       appearOnScroll.observe(fader);

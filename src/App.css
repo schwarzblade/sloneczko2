@@ -164,6 +164,7 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
   .nav-links {
     height: auto;
@@ -180,13 +181,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/hero.jpg") center/cover no-repeat;
+  background: url("./images/pokoje/dom/dom.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/pokoje/dom/dom_1.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -399,9 +400,11 @@ h6 {
   grid-row-gap: 1rem;
   grid-column-gap: 50px;
 }
+
 .single-room-images img {
   width: 100%;
   display: block;
+  height: 40vh;
 }
 .single-room-info {
   display: grid;
@@ -410,7 +413,7 @@ h6 {
   margin-top: 3rem;
 }
 .info {
-  margin: 1rem 0 0 5rem;
+  margin: 1rem 0 0 16rem;
 }
 
 .desc h3 {
@@ -887,6 +890,7 @@ ul {
 .img-hover-zoom {
   /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  height: 19vh;
 }
 
 /* [2] Transition property for smooth transformation of images */
