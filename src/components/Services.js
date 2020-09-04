@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Title from "./Title";
 import { FaUtensils, FaCocktail, FaTruck, FaMountain } from "react-icons/fa";
-import gsap from "gsap";
 
 import { useIntersection } from "react-use";
 
@@ -35,33 +34,33 @@ const state = {
 export default function Services() {
   const sectionRef = useRef(null);
 
-  const widthThreshold = window.innerWidth > 600 ? .8 : 0.3;
+  const featured1 = document.getElementsByClassName("services-center");
 
-  const intersection = useIntersection(sectionRef, {
-    root: null,
-    rootMargin: "0px",
+  const widthThreshold = window.innerWidth > 600 ? 1 : 0.3;
+
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = {
     threshold: widthThreshold,
-  });
-
-  const fromRight = (element) => {
-    gsap.fromTo(
-      element,
-      1,
-      {
-        opacity: 0,
-        x: 500,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 2,
-        ease: "slow",
-
-      }
-    );
+    rootMargin: "20px",
   };
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        entry.target.classList.remove("appear");
+      } else {
+        entry.target.classList.add("appear");
+        // appearOnScroll.unobserve(entry.target);
+      }
+    });
+  },
+  appearOptions);
 
-  intersection && intersection.intersectionRatio > widthThreshold && fromRight(".fadeIn");
+  faders.forEach((fader) => {
+    appearOnScroll.observe(fader);
+  });
 
   return (
     <section className="services">
@@ -69,7 +68,7 @@ export default function Services() {
       <div ref={sectionRef} className="services-center">
         {state.services.map((item, index) => {
           return (
-            <article key={index} id={index} className="service fadeIn">
+            <article key={index} id={index} className="service fade-in">
               <span>{item.icon}</span>
               <h6>{item.title}</h6>
               <p>{item.info}</p>
