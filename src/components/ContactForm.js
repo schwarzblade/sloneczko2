@@ -8,7 +8,7 @@ export default class ContactForm extends Component {
     email: "",
     message: "",
     isVerifide: false,
-    buttonText: "wyslij",
+    buttonText: "wyślij",
   };
 
   render() {
@@ -90,7 +90,12 @@ export default class ContactForm extends Component {
 
   validForm = (state) => {
     const { name, email, message, isVerifide } = state;
-    console.log(name.length);
+    if (!isVerifide) {
+      document.getElementById("recaptcha").classList.add("formError");
+      setTimeout(() => {
+        document.getElementById("recaptcha").classList.remove("formError");
+      }, 3000);
+    }
     if (name.length === 0) {
       document.getElementById("nameValid").classList.add("formError");
       setTimeout(() => {
@@ -107,12 +112,6 @@ export default class ContactForm extends Component {
       document.getElementById("messageValid").classList.add("formError");
       setTimeout(() => {
         document.getElementById("messageValid").classList.remove("formError");
-      }, 3000);
-    }
-    if (!isVerifide) {
-      document.getElementById("recaptcha").classList.add("formError");
-      setTimeout(() => {
-        document.getElementById("recaptcha").classList.remove("formError");
       }, 3000);
     }
   };
@@ -147,6 +146,7 @@ export default class ContactForm extends Component {
           name: "",
           email: "",
           message: "",
+          isVerifide: false,
           buttonText: "Wysłano",
         });
       })

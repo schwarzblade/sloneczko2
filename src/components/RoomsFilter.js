@@ -86,7 +86,7 @@ export default function RoomsFilter({ rooms }) {
         {/* capcity end*/}
         {/*price */}
         <div className="form-group">
-          <label htmlFor="type">cena za pokój ${price}</label>
+          <label htmlFor="type">cena za pokój - {price} PLN</label>
           <input
             type="range"
             name="price"

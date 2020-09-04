@@ -565,11 +565,11 @@ export default [
     fields: {
       name: "9",
       slug: "9",
-      type: "1-osobowy",
+      type: "3-osobowy",
       price: 180,
       size: 500,
       capacity: 3,
-      pets: false,
+      pets: true,
       breakfast: false,
       featured: false,
       description:
@@ -621,10 +621,10 @@ export default [
       name: "10",
       slug: "10",
       type: "2-osobowy",
-      price: 350,
+      price: 120,
       size: 550,
       capacity: 2,
-      pets: false,
+      pets: true,
       breakfast: false,
       featured: false,
       description:
