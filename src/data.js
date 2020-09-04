@@ -86,7 +86,7 @@ export default [
       id: "1",
     },
     fields: {
-      name: "1",
+      name: "Pokój nr 1",
       slug: "1",
       type: "3-osobowy",
       price: 180,
@@ -142,7 +142,7 @@ export default [
       id: "2",
     },
     fields: {
-      name: "2",
+      name: "Pokój nr 2",
       slug: "2",
       type: "3-osobowy",
       price: 180,
@@ -197,7 +197,7 @@ export default [
       id: "3",
     },
     fields: {
-      name: "3",
+      name: "Pokój nr 3",
       slug: "3",
       type: "2-osobowy",
       price: 120,
@@ -266,7 +266,7 @@ export default [
       id: "4",
     },
     fields: {
-      name: "4",
+      name: "Pokój nr 4",
       slug: "4",
       type: "4-osobowy",
       price: 240,
@@ -335,7 +335,7 @@ export default [
       id: "5",
     },
     fields: {
-      name: "5",
+      name: "Pokój nr  5",
       slug: "5",
       type: "4-osobowy",
       price: 180,
@@ -397,7 +397,7 @@ export default [
       id: "6",
     },
     fields: {
-      name: "6",
+      name: "Pokój nr  6",
       slug: "6",
       type: "4-osobowy",
       price: 240,
@@ -452,7 +452,7 @@ export default [
       id: "7",
     },
     fields: {
-      name: "7",
+      name: "Pokój nr  7",
       slug: "7",
       type: "2-osobowy",
       price: 120,
@@ -507,7 +507,7 @@ export default [
       id: "8",
     },
     fields: {
-      name: "8",
+      name: "Pokój nr  8",
       slug: "8",
       type: "4-osobowy",
       price: 240,
@@ -563,7 +563,7 @@ export default [
       id: "9",
     },
     fields: {
-      name: "9",
+      name: "Pokój nr 9",
       slug: "9",
       type: "3-osobowy",
       price: 180,
@@ -618,7 +618,7 @@ export default [
       id: "10",
     },
     fields: {
-      name: "10",
+      name: "Pokój nr 10",
       slug: "10",
       type: "2-osobowy",
       price: 120,
@@ -673,7 +673,7 @@ export default [
       id: "11",
     },
     fields: {
-      name: "11",
+      name: "Pokój nr  11",
       slug: "11",
       type: "2-osobowy",
       price: 120,
@@ -749,7 +749,7 @@ export default [
       id: "12",
     },
     fields: {
-      name: "12",
+      name: "Pokój nr  12",
       slug: "12",
       type: "4-osobowy",
       price: 240,
@@ -811,7 +811,7 @@ export default [
       id: "13",
     },
     fields: {
-      name: "13",
+      name: "Pokój nr  13",
       slug: "13",
       type: "2-osobowy",
       price: 120,
@@ -866,7 +866,7 @@ export default [
       id: "14",
     },
     fields: {
-      name: "14",
+      name: "Pokój nr  14",
       slug: "14",
       type: "2-osobowy",
       price: 120,
@@ -921,7 +921,7 @@ export default [
       id: "15",
     },
     fields: {
-      name: "15",
+      name: "Pokój nr  15",
       slug: "15",
       type: "2-osobowy",
       price: 120,
@@ -976,7 +976,7 @@ export default [
       id: "16",
     },
     fields: {
-      name: "16",
+      name: "Pokój nr 16",
       slug: "16",
       type: "2-osobowy",
       price: 120,
@@ -1031,7 +1031,7 @@ export default [
       id: "17",
     },
     fields: {
-      name: "17",
+      name: "Pokój nr  17",
       slug: "17",
       type: "2-osobowy",
       price: 120,
@@ -1100,7 +1100,7 @@ export default [
       id: "18",
     },
     fields: {
-      name: "18",
+      name: "Pokój nr 18",
       slug: "18",
       type: "1-osobowy",
       price: 60,
