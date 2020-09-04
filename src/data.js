@@ -41,6 +41,14 @@ import room7_2 from "./images/pokoje/7/7_2.jpg";
 import room7_3 from "./images/pokoje/7/7_3.jpg";
 import room7_4 from "./images/pokoje/7/7_4.jpg";
 
+//10
+
+import room10_1 from "./images/pokoje/10/10_1.jpg";
+import room10_2 from "./images/pokoje/10/10_2.jpg";
+import room10_3 from "./images/pokoje/10/10_3.jpg";
+import room10_4 from "./images/pokoje/10/10_4.jpg";
+import room10_5 from "./images/pokoje/10/10_5.jpg";
+
 // 11
 
 import room11_1 from "./images/pokoje/11/11_1.jpg";
@@ -57,6 +65,19 @@ import room12_2 from "./images/pokoje/12/12_2.jpg";
 import room12_3 from "./images/pokoje/12/12_3.jpg";
 import room12_4 from "./images/pokoje/12/12_4.jpg";
 import room12_5 from "./images/pokoje/12/12_5.jpg";
+// 13
+
+import room13_1 from "./images/pokoje/13/13_1.jpg";
+import room13_2 from "./images/pokoje/13/13_2.jpg";
+import room13_3 from "./images/pokoje/13/13_3.jpg";
+import room13_4 from "./images/pokoje/13/13_4.jpg";
+import room13_5 from "./images/pokoje/13/13_5.jpg";
+import room13_6 from "./images/pokoje/13/13_6.jpg";
+
+// 14
+import room14_1 from "./images/pokoje/14/14_1.jpg";
+import room14_2 from "./images/pokoje/14/14_2.jpg";
+import room14_3 from "./images/pokoje/14/14_3.jpg";
 
 // 15
 
@@ -640,28 +661,35 @@ export default [
         {
           fields: {
             file: {
-              url: "",
+              url: room10_1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room10_2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room10_3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room10_4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room10_5,
             },
           },
         },
@@ -813,8 +841,8 @@ export default [
     fields: {
       name: "Pokój nr  13",
       slug: "13",
-      type: "2-osobowy",
-      price: 120,
+      type: "3-osobowy",
+      price: 180,
       size: 1000,
       capacity: 2,
       pets: true,
@@ -833,28 +861,42 @@ export default [
         {
           fields: {
             file: {
-              url: "",
+              url: room13_1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room13_2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room13_3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room13_4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room13_5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room13_6,
             },
           },
         },
@@ -888,28 +930,21 @@ export default [
         {
           fields: {
             file: {
-              url: "",
+              url: room14_1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room14_2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: "",
+              url: room14_3,
             },
           },
         },
