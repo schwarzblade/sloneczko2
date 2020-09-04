@@ -47,14 +47,14 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledHero img={mainImg}>
-          <Banner title={` pokój nr ${name}`}>
+          <Banner title={`${name}`}>
             <Link to="/rooms" className="btn-primary">
               Powrót do pokoi
             </Link>
           </Banner>
         </StyledHero>
-        <section className="single-room">
-          <div className="single-room-images">
+        <section className="single-room ">
+          <div className="single-room-images ">
             {defaultImg.map((item, index) => {
               return (
                 <Zoom>
