@@ -899,7 +899,7 @@ ul {
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform 0.5s ease;
-  height: 20vh;
+  height: 30vh;
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
