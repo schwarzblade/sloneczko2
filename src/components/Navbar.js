@@ -43,11 +43,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <div className="hamburgerMenu">
-        {" "}
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} />
-      </div>
     </>
   );
 };

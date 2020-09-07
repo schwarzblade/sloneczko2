@@ -50,7 +50,7 @@ export default function Footer() {
         <h3>Szukaj nas na:</h3>
 
         <div
-          class="fb-page"
+          className="fb-page"
           data-href="https://www.facebook.com/SloneczkoJakUMamy/"
           data-tabs=""
           data-width=""
@@ -62,7 +62,7 @@ export default function Footer() {
         >
           <blockquote
             cite="https://www.facebook.com/SloneczkoJakUMamy/"
-            class="fb-xfbml-parse-ignore"
+            className="fb-xfbml-parse-ignore"
           >
             <a href="https://www.facebook.com/SloneczkoJakUMamy/">
               Dom Wypoczynkowy Słoneczko

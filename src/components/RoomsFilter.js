@@ -53,6 +53,7 @@ export default function RoomsFilter({ rooms }) {
       </option>
     );
   });
+
   return (
     <section className="filter-container">
       <Title title="Wyszukaj pokój"></Title>
@@ -72,7 +73,7 @@ export default function RoomsFilter({ rooms }) {
         </div>
         {/*capacity */}
         <div className="form-group">
-          <label htmlFor="type">ilośc osób</label>
+          <label htmlFor="capacity">ilośc osób</label>
           <select
             name="capacity"
             id="capacity"
@@ -86,7 +87,7 @@ export default function RoomsFilter({ rooms }) {
         {/* capcity end*/}
         {/*price */}
         <div className="form-group">
-          <label htmlFor="type">cena za pokój - {price} PLN</label>
+          <label htmlFor="price">cena za pokój - {price} PLN</label>
           <input
             type="range"
             name="price"

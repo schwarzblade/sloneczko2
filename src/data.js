@@ -19,7 +19,7 @@ import room3_4 from "./images/pokoje/3/3_4.jpg";
 import room3_5 from "./images/pokoje/3/3_5.jpg";
 import room3_6 from "./images/pokoje/3/3_6.jpg";
 
-//
+//4
 import room4_1 from "./images/pokoje/4/4_1.jpg";
 import room4_2 from "./images/pokoje/4/4_2.jpg";
 import room4_3 from "./images/pokoje/4/4_3.jpg";
@@ -34,6 +34,17 @@ import room5_3 from "./images/pokoje/5/5_3.jpg";
 import room5_4 from "./images/pokoje/5/5_4.jpg";
 import room5_5 from "./images/pokoje/5/5_5.jpg";
 
+// 6
+import room6_1 from "./images/pokoje/6/6_1.jpg";
+import room6_2 from "./images/pokoje/6/6_2.jpg";
+import room6_3 from "./images/pokoje/6/6_3.jpg";
+import room6_4 from "./images/pokoje/6/6_4.jpg";
+import room6_5 from "./images/pokoje/6/6_5.jpg";
+import room6_6 from "./images/pokoje/6/6_6.jpg";
+import room6_7 from "./images/pokoje/6/6_7.jpg";
+import room6_8 from "./images/pokoje/6/6_8.jpg";
+import room6_9 from "./images/pokoje/6/6_9.jpg";
+
 // 7
 
 import room7_1 from "./images/pokoje/7/7_1.jpg";
@@ -41,6 +52,12 @@ import room7_2 from "./images/pokoje/7/7_2.jpg";
 import room7_3 from "./images/pokoje/7/7_3.jpg";
 import room7_4 from "./images/pokoje/7/7_4.jpg";
 
+// 8
+import room8_1 from "./images/pokoje/8/8_1.jpg";
+import room8_2 from "./images/pokoje/8/8_2.jpg";
+import room8_3 from "./images/pokoje/8/8_3.jpg";
+import room8_4 from "./images/pokoje/8/8_4.jpg";
+import room8_5 from "./images/pokoje/8/8_5.jpg";
 //10
 
 import room10_1 from "./images/pokoje/10/10_1.jpg";
@@ -104,6 +121,13 @@ import room17_3 from "./images/pokoje/17/17_3.jpg";
 import room17_4 from "./images/pokoje/17/17_4.jpg";
 import room17_5 from "./images/pokoje/17/17_5.jpg";
 import room17_6 from "./images/pokoje/17/17_6.jpg";
+
+// 18
+
+import room18_1 from "./images/pokoje/18/18_1.jpg";
+import room18_2 from "./images/pokoje/18/18_2.jpg";
+import room18_3 from "./images/pokoje/18/18_3.jpg";
+import room18_4 from "./images/pokoje/18/18_4.jpg";
 
 export default [
   {
@@ -360,7 +384,7 @@ export default [
       id: "5",
     },
     fields: {
-      name: "Pokój nr  5",
+      name: "Pokój nr 5",
       slug: "5",
       type: "4-osobowy",
       price: 180,
@@ -422,7 +446,7 @@ export default [
       id: "6",
     },
     fields: {
-      name: "Pokój nr  6",
+      name: "Pokój nr 6",
       slug: "6",
       type: "4-osobowy",
       price: 240,
@@ -444,28 +468,63 @@ export default [
         {
           fields: {
             file: {
-              url: "",
+              url: room6_1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room6_2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room6_3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room6_4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room6_5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room6_6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room6_7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room6_8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room6_9,
             },
           },
         },
@@ -477,7 +536,7 @@ export default [
       id: "7",
     },
     fields: {
-      name: "Pokój nr  7",
+      name: "Pokój nr 7",
       slug: "7",
       type: "2-osobowy",
       price: 120,
@@ -532,7 +591,7 @@ export default [
       id: "8",
     },
     fields: {
-      name: "Pokój nr  8",
+      name: "Pokój nr 8",
       slug: "8",
       type: "4-osobowy",
       price: 240,
@@ -555,28 +614,35 @@ export default [
         {
           fields: {
             file: {
-              url: "",
+              url: room8_1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room8_2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room8_3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room8_4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room8_5,
             },
           },
         },
@@ -705,7 +771,7 @@ export default [
       id: "11",
     },
     fields: {
-      name: "Pokój nr  11",
+      name: "Pokój nr 11",
       slug: "11",
       type: "2-osobowy",
       price: 120,
@@ -781,7 +847,7 @@ export default [
       id: "12",
     },
     fields: {
-      name: "Pokój nr  12",
+      name: "Pokój nr 12",
       slug: "12",
       type: "4-osobowy",
       price: 240,
@@ -843,7 +909,7 @@ export default [
       id: "13",
     },
     fields: {
-      name: "Pokój nr  13",
+      name: "Pokój nr 13",
       slug: "13",
       type: "3-osobowy",
       price: 180,
@@ -912,7 +978,7 @@ export default [
       id: "14",
     },
     fields: {
-      name: "Pokój nr  14",
+      name: "Pokój nr 14",
       slug: "14",
       type: "2-osobowy",
       price: 120,
@@ -988,7 +1054,7 @@ export default [
       id: "15",
     },
     fields: {
-      name: "Pokój nr  15",
+      name: "Pokój nr 15",
       slug: "15",
       type: "2-osobowy",
       price: 120,
@@ -1098,7 +1164,7 @@ export default [
       id: "17",
     },
     fields: {
-      name: "Pokój nr  17",
+      name: "Pokój nr 17",
       slug: "17",
       type: "2-osobowy",
       price: 120,
@@ -1189,42 +1255,28 @@ export default [
         {
           fields: {
             file: {
-              url: "",
+              url: room18_1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room18_2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
+              url: room18_3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: "",
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: "",
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: "",
+              url: room18_4,
             },
           },
         },
