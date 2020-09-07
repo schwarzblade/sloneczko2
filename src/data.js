@@ -78,6 +78,10 @@ import room13_6 from "./images/pokoje/13/13_6.jpg";
 import room14_1 from "./images/pokoje/14/14_1.jpg";
 import room14_2 from "./images/pokoje/14/14_2.jpg";
 import room14_3 from "./images/pokoje/14/14_3.jpg";
+import room14_4 from "./images/pokoje/14/14_4.jpg";
+import room14_5 from "./images/pokoje/14/14_5.jpg";
+import room14_6 from "./images/pokoje/14/14_6.jpg";
+import room14_7 from "./images/pokoje/14/14_7.jpg";
 
 // 15
 
@@ -945,6 +949,34 @@ export default [
           fields: {
             file: {
               url: room14_3,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room14_4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room14_5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room14_6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: room14_7,
             },
           },
         },
