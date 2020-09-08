@@ -155,9 +155,6 @@ h6 {
   height: 150px;
 }
 @media screen and (min-width: 768px) {
-  .nav-header img {
-    margin-left: -250px;
-  }
   .nav-btn {
     display: none;
   }
