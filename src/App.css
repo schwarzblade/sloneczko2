@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 :root {
@@ -61,6 +69,8 @@ h6 {
   background: var(--primaryColor);
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColor);
+  -webkit-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
@@ -98,7 +108,11 @@ h6 {
   z-index: 1;
 }
 .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -116,6 +130,8 @@ h6 {
 .nav-links {
   height: 0;
   overflow: hidden;
+  -webkit-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
   transition: var(--mainTransition);
   list-style-type: none;
 }
@@ -125,6 +141,8 @@ h6 {
   text-decoration: none;
   padding: 1rem 0;
   color: var(--mainBlack);
+  -webkit-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -139,8 +157,16 @@ h6 {
   top: 40px;
   left: 0;
   background: var(--primaryColor);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
   transform-origin: right;
 }
 .nav-links li a:hover {
@@ -148,7 +174,11 @@ h6 {
 }
 
 .nav-links li a:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
   transform-origin: left;
 }
 .show-nav {
@@ -164,11 +194,17 @@ h6 {
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .nav-links {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 4rem;
   }
@@ -183,8 +219,14 @@ h6 {
 .roomsHero {
   min-height: calc(100vh - 66px);
   background: url("./images/pokoje/dom/dom.jpg") center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .roomsHero {
@@ -202,7 +244,10 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 
+  -webkit-animation-duration: 2s;
+
   animation-duration: 2s;
+  -webkit-animation-name: animeBanner;
   animation-name: animeBanner;
 }
 .banner h1 {
@@ -257,15 +302,16 @@ h6 {
 /* services */
 .services {
   padding: 5rem 0;
-  /*min-height: calc(100vh - 66px); */
+  min-height: cal(80vh - 66px);
 }
 .services {
   background: var(--darkGrey);
   text-align: center;
 }
 .services-center {
-  width: 90vw;
+  width: 85vw;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-row-gap: 2rem;
@@ -302,11 +348,12 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
-  /* min-height: calc(100vh - 66px); */
+  min-height: calc(80vh - 66px);
 }
 .featured-rooms-center {
-  width: 80vw;
+  width: 85vw;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 2rem;
@@ -321,16 +368,20 @@ h6 {
 @media screen and (min-width: 992px) {
   .featured-rooms-center {
     width: 95vw;
-    max-width: 1170px;
+    max-width: 1200px;
   }
 }
 /* end pf featured rooms */
 /* room */
 .room {
+  -webkit-box-shadow: var(--lightShadow);
   box-shadow: var(--lightShadow);
+  -webkit-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
   transition: var(--mainTransition);
 }
 .room:hover {
+  -webkit-box-shadow: var(--darkShadow);
   box-shadow: var(--darkShadow);
 }
 
@@ -340,6 +391,8 @@ h6 {
 .img-container img {
   width: 100%;
   display: block;
+  -webkit-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
   transition: var(--mainTransition);
 }
 .price-top {
@@ -352,6 +405,8 @@ h6 {
   border-bottom-right-radius: 1rem;
   font-size: 0.5rem;
   text-align: center;
+  -webkit-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
   transition: var(--mainTransition);
 }
 .price-top h6 {
@@ -364,7 +419,11 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .img-container:hover {
@@ -377,6 +436,8 @@ h6 {
   opacity: 0;
 }
 .img-container:hover .room-link {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
@@ -396,6 +457,7 @@ h6 {
 .single-room-images {
   width: 90vw;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row-gap: 1rem;
@@ -408,6 +470,7 @@ h6 {
   height: 40vh;
 }
 .single-room-info {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-left: 4rem;
@@ -443,7 +506,12 @@ h6 {
 }
 .extras {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .extras > li {
@@ -458,7 +526,9 @@ h6 {
     max-width: 1170px;
   }
   .single-room-info {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
     margin-left: 0;
@@ -480,6 +550,7 @@ h6 {
 .roomslist-center {
   width: 80vw;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-row-gap: 2rem;
@@ -505,6 +576,7 @@ h6 {
 .filter-form {
   width: 60vw;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
   grid-row-gap: 2rem;
@@ -524,6 +596,8 @@ h6 {
   font-size: 1rem;
 }
 .size-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 /* Chrome, Safari, Edge, Opera */
@@ -545,6 +619,8 @@ input[type="number"] {
   margin-right: 0.3rem;
 }
 .single-extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .single-extra label {
@@ -586,6 +662,7 @@ ul {
 }
 
 .wrapper {
+  -webkit-box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
@@ -629,6 +706,7 @@ ul {
 }
 
 .wrapper {
+  -webkit-box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
@@ -661,6 +739,8 @@ ul {
 }
 
 .contact form .full {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1 / 3;
 }
 
@@ -683,6 +763,8 @@ ul {
   background: #92bde7;
   color: #fff;
   outline: 0;
+  -webkit-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
 
@@ -696,14 +778,18 @@ ul {
 /* LARGE SCREENS */
 @media (min-width: 700px) {
   .wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
   }
   .contact .recaptcha {
     width: 91%;
   }
   .contact form {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -728,6 +814,8 @@ ul {
 
   .dolar {
     position: absolute;
+    -webkit-transform: translateY(70%);
+    -ms-transform: translateY(70%);
     transform: translateY(70%);
   }
 
@@ -755,7 +843,11 @@ ul {
 }
 
 .pin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 180px;
   color: var(--main-blue);
@@ -801,13 +893,19 @@ ul {
 }
 .socialMedia span:hover {
   border-top-right-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  -o-transition: box-shadow 0.5s ease-in-out;
   transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
   -webkit-box-shadow: 10px -12px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px -12px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px -12px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .footer {
+  margin: 0 auto;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   background: var(--darkGrey);
 }
@@ -831,6 +929,8 @@ ul {
   text-decoration: none;
   color: black;
   position: relative;
+  -webkit-transition: left ease-in 0.3s;
+  -o-transition: left ease-in 0.3s;
   transition: left ease-in 0.3s;
   left: 0;
 }
@@ -853,19 +953,35 @@ ul {
 }
 
 .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-line-pack: center;
   align-content: center;
   width: 45vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 @media screen and (min-width: 799px) {
   .socialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: center;
     align-content: center;
     width: 45vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 
@@ -875,14 +991,21 @@ ul {
 
   .footer {
     height: 30vh;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
     background: var(--darkGrey);
   }
 
   .socialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 0;
   }
@@ -895,7 +1018,9 @@ ul {
 
 .footerInfo {
   margin-left: 15px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
 }
@@ -908,12 +1033,18 @@ ul {
 
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   height: 30vh;
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
@@ -926,6 +1057,26 @@ ul {
 
 .children {
   display: inline-block;
+}
+@-webkit-keyframes animeOpacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes animeOpacity {
   0% {
@@ -949,24 +1100,52 @@ ul {
 }
 
 .animeText {
+  -webkit-animation-name: text;
   animation-name: text;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+}
+
+@-webkit-keyframes text {
+  from {
+    -webkit-transform: translateX(+3343px);
+    transform: translateX(+3343px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
 }
 
 @keyframes text {
   from {
+    -webkit-transform: translateX(+3343px);
     transform: translateX(+3343px);
   }
   to {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes animeBanner {
+  from {
+    -webkit-transform: translateY(-3333px);
+    transform: translateY(-3333px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes animeBanner {
   from {
+    -webkit-transform: translateY(-3333px);
     transform: translateY(-3333px);
   }
   to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
@@ -982,10 +1161,17 @@ ul {
 }
 
 .hamburger {
+  -webkit-transition: -webkit-transform 0.3s 0.1s ease-in-out;
+  transition: -webkit-transform 0.3s 0.1s ease-in-out;
+  -o-transition: transform 0.3s 0.1s ease-in-out;
   transition: transform 0.3s 0.1s ease-in-out;
+  transition: transform 0.3s 0.1s ease-in-out,
+    -webkit-transform 0.3s 0.1s ease-in-out;
 }
 
 .hamburger--active {
+  -webkit-transform: translatex(250px);
+  -ms-transform: translatex(250px);
   transform: translatex(250px);
 }
 
@@ -1011,7 +1197,11 @@ ul {
 
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: background-color 0.1s 0.2s ease-in-out;
+  -o-transition: background-color 0.1s 0.2s ease-in-out;
   transition: background-color 0.1s 0.2s ease-in-out;
 }
 
@@ -1024,7 +1214,12 @@ ul {
 
   content: "";
   left: 0;
+  -webkit-transition: -webkit-transform 0.2s 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s 0.2s ease-in-out;
+  -o-transition: transform 0.2s 0.2s ease-in-out;
   transition: transform 0.2s 0.2s ease-in-out;
+  transition: transform 0.2s 0.2s ease-in-out,
+    -webkit-transform 0.2s 0.2s ease-in-out;
 }
 
 .hamburger__inner::before {
@@ -1040,10 +1235,14 @@ ul {
 }
 
 .hamburger--active .hamburger__inner:before {
+  -webkit-transform: translateY(10px) rotate(45deg);
+  -ms-transform: translateY(10px) rotate(45deg);
   transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger--active .hamburger__inner:after {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
   transform: translateY(-10px) rotate(-45deg);
 }
 
@@ -1054,12 +1253,15 @@ ul {
 
   .fade-in {
     opacity: 0;
+    -webkit-animation: slideOut 1s;
     animation: slideOut 1s;
   }
 
   .appear {
     opacity: 1;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    -webkit-animation-name: slidein;
     animation-name: slidein;
   }
 }
@@ -1070,37 +1272,77 @@ ul {
 
 .appear {
   opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
   transition: opacity 1s ease-in;
 }
 
 /*hambureger menu end*/
 
 .aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 0;
 }
 
-@keyframes slidein {
+@-webkit-keyframes slidein {
   from {
+    -webkit-transform: translateX(-300px);
     transform: translateX(-300px);
     opacity: 0;
   }
 
   to {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
     opacity: 1;
   }
 }
 
-@keyframes slideOut {
+@keyframes slidein {
   from {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  from {
+    -webkit-transform: translateX(0px);
     transform: translateX(0px);
     opacity: 1;
   }
 
   to {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateX(-300px);
     transform: translateX(-300px);
     opacity: 0;
   }
