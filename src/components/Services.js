@@ -10,24 +10,25 @@ const state = {
       icon: <FaUtensils />,
       title: "regionalne potrawy",
       info:
-        "Produkty na potrawy serwowane w naszym ośrodku pochodzą od lokalnych wytwórców co gwarantuje ich najwyższa jakośc i wspaniały smak",
+        "Produkty na potrawy serwowane w naszym ośrodku pochodzą od lokalnych wytwórców, co gwarantuje ich najwyższą jakość i wspaniały smak",
     },
     {
       icon: <FaCocktail />,
       title: "imprezy okolicznościowe",
       info:
-        "Urodziny , imieniny, KOmunie, Chrzty, 18-nastki zorganuizujemy niezpomnine imprezy okolicznościowe",
+        "Urodziny , imieniny, Komunie, Chrzest, 18-nastki, zorganuizujemy niezpomnine imprezy okolicznościowe",
     },
     {
       icon: <FaTruck />,
       title: "catering",
-      info: "Obiady, pełny catering na dwóz, zadzwoń",
+      info:
+        "Obiady, ciasta, na zamówienie z dowozem na terenie miasta Mszana Dolna, zadzwoń",
     },
     {
       icon: <FaMountain />,
-      title: "wspaniałem miejsce na aktywny wypoczynek",
+      title: "wspaniałe miejsce na aktywny wypoczynek",
       info:
-        "Cisza i spokój zdala od zgiełku miast,szlaki turystyczne po Beskidzie Wyspowym, trasy rowerowe ",
+        "Cisza i spokój z dala od zgiełku miasta. Szlaki turystyczne po Beskidzie Wyspowym, trasy rowerowe ",
     },
   ],
 };
