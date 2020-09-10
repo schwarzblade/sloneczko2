@@ -69,7 +69,7 @@ export default function Services() {
       <div ref={sectionRef} className="services-center">
         {state.services.map((item, index) => {
           return (
-            <article key={index} id={index} className="service fade-in">
+            <article key={index} id={index} className="service ">
               <span>{item.icon}</span>
               <h6>{item.title}</h6>
               <p>{item.info}</p>

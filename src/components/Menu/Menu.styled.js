@@ -14,7 +14,7 @@ export const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 100vw;
   }
 
   .link {
