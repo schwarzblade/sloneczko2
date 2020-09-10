@@ -31,7 +31,7 @@ const Menu = ({ open, setOpen }) => {
         </span>
         O nas
       </Link>
-      <div className="socialMedia">
+      <div className="hamburgerSocialMedia">
         <span>
           <a href="https://www.facebook.com/SloneczkoJakUMamy/">
             <FaFacebookSquare />

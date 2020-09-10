@@ -12,11 +12,16 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
+  width: 100vw;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100vw;
   }
-
+  .hamburgerSocialMedia {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
   .link {
     text-decoration: none;
   }
@@ -42,10 +47,6 @@ export const StyledMenu = styled.nav`
     &:hover {
       color: blue;
     }
-  }
-
-  .socialMedia span {
-    margin-left: 2rem;
   }
 
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
