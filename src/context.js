@@ -14,8 +14,8 @@ class RoomProvider extends Component {
     price: 0,
     minPrice: 0,
     maxPrice: 0,
-    minSize: 0,
-    maxSize: 0,
+    // minSize: 0,
+    // maxSize: 0,
     breakfast: false,
     pets: false,
   };
@@ -76,8 +76,8 @@ class RoomProvider extends Component {
       price,
       minPrice,
       maxPrice,
-      minSize,
-      maxSize,
+      // minSize,
+      // maxSize,
       breakfast,
       pets,
     } = this.state;
@@ -86,7 +86,7 @@ class RoomProvider extends Component {
 
     //filter by type
     if (type !== "wszystkie") {
-      tempRooms = tempRooms.filter((room) => room.type === type);
+      tempRooms = tempRooms.filter((room) => room.type == type);
     }
 
     //filter by capacity
@@ -99,10 +99,10 @@ class RoomProvider extends Component {
 
     tempRooms = tempRooms.filter((room) => room.price <= price);
 
-    //filter sie
-    tempRooms = tempRooms.filter(
-      (room) => room.size >= minSize && room.size <= maxSize
-    );
+    // //filter sie
+    // tempRooms = tempRooms.filter(
+    //   (room) => room.size >= minSize && room.size <= maxSize
+    // );
 
     //filter pets
     if (pets) {

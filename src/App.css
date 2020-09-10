@@ -333,8 +333,8 @@ h6 {
 
 @media screen and (min-width: 992px) {
   .services-center {
-    width: 95vw;
-    max-width: 1170px;
+    width: 65vw;
+    /* max-width: 1170px; */
   }
 }
 
@@ -351,7 +351,7 @@ h6 {
   min-height: calc(80vh - 66px);
 }
 .featured-rooms-center {
-  width: 85vw;
+  width: 65vw;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -361,14 +361,14 @@ h6 {
 }
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
-    width: 90vw;
+    width: 65vw;
     grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
   .featured-rooms-center {
-    width: 95vw;
-    max-width: 1200px;
+    width: 65vw;
+    /* max-width: 1200px; */
   }
 }
 /* end pf featured rooms */

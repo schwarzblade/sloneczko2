@@ -60,7 +60,7 @@ export default function RoomsFilter({ rooms }) {
       <form className="filter-form ">
         {/* select type*/}
         <div className="form-group">
-          <label htmlFor="type">room type</label>
+          <label htmlFor="type">Typ </label>
           <select
             name="type"
             id="type"
@@ -101,7 +101,7 @@ export default function RoomsFilter({ rooms }) {
         </div>
         {/* price end*/}
         {/*size */}
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="size" className="size">
             Powierzchnia pokoju m&#178;
           </label>
@@ -123,7 +123,7 @@ export default function RoomsFilter({ rooms }) {
               className="size-input"
             />
           </div>
-        </div>
+        </div> */}
         {/*size end*/}
         {/*extras*/}
         <div className="form-group">
