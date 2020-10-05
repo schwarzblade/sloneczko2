@@ -113,7 +113,7 @@ h6 {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav-btn {
@@ -243,7 +243,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-
+  width: 100vw;
   -webkit-animation-duration: 2s;
 
   animation-duration: 2s;
@@ -274,6 +274,7 @@ h6 {
 @media screen and (min-width: 992px) {
   .banner {
     padding: 2rem 6rem;
+    width: 60vw;
   }
   .banner h1 {
     font-size: 4rem;
@@ -829,8 +830,7 @@ ul {
   margin-top: 1rem;
 }
 .contact .recaptcha {
-  width: 82%;
-  margin-left: 2rem;
+  width: 50vw;
 }
 /* LARGE SCREENS */
 @media (min-width: 700px) {
@@ -1003,7 +1003,11 @@ ul {
 }
 
 .socialMedia:nth-child(2) {
-  width: 50%;
+  width: 50vw;
+}
+
+.socialMedia:nth-child(3) {
+  margin-left: 1rem;
 }
 
 .footer {
@@ -1569,6 +1573,7 @@ ul {
   display: table;
   font-size: 3rem;
   background-color: coral;
+  text-align: center;
 }
 
 .newyearsoffer-footer {
