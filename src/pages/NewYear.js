@@ -128,7 +128,7 @@ export default function NewYear() {
           Reszta alkoholu we własnym zakresie. Na wszystkie pojawiające się
           pytania odpowiadam pod numerem telefonu 601 279 579, lub na facebooku.
           <p>
-            <h3 className=" newyear-header">Wpłat należy dokonywać na:</h3>
+            <h3 className="newyear-header">Wpłat należy dokonywać na:</h3>
           </p>
           <p>
             <h3 className=" newyear-header">
