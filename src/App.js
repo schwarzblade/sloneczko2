@@ -12,6 +12,9 @@ import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
+
+import NewYear from "./pages/NewYear";
+
 function App() {
   return (
     <>
@@ -23,6 +26,7 @@ function App() {
           <Route exact path="/rooms/:slug" component={SingleRoom} />
           <Route exact path="/contact/" component={Contact} />
           <Route exact path="/aboutus" component={AboutUs} />
+          <Route exact path="/newyear" component={NewYear} />
           <Route component={Error} />
         </Switch>
         <Footer />
