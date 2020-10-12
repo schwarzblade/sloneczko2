@@ -53,7 +53,7 @@ export default function Footer() {
           className="fb-page"
           data-href="https://www.facebook.com/SloneczkoJakUMamy/"
           data-tabs=""
-          data-width=""
+          data-width="300"
           data-height=""
           data-small-header="false"
           data-adapt-container-width="false"
