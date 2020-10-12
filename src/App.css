@@ -103,7 +103,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 0;
   background: var(--offWhite);
   z-index: 1;
 }
@@ -113,7 +113,7 @@ h6 {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-btn {
@@ -1553,7 +1553,7 @@ ul {
 
 .newyear-center {
   display: table;
-  margin: 0 auto;
+  margin: 2rem auto;
   font-size: 2rem;
 }
 
@@ -1614,7 +1614,6 @@ ul {
   }
 
   .newyearsoffer .center {
-    padding-left: 5rem;
     margin-left: 12rem;
   }
 
