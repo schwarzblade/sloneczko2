@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
 
 import NewYear from "./pages/NewYear";
+import Easter from "./pages/Easter"
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
           <Route exact path="/rooms/:slug" component={SingleRoom} />
           <Route exact path="/contact/" component={Contact} />
           <Route exact path="/aboutus" component={AboutUs} />
-          <Route exact path="/newyear" component={NewYear} />
+          {/* <Route exact path="/newyear" component={NewYear} /> */}
+          <Route exact path="/easter" component={Easter} />
           <Route component={Error} />
         </Switch>
         <Footer />

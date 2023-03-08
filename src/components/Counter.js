@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Counter() {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-12-31`) - +new Date();
+    const difference = +new Date(`${year}-04-07`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -45,7 +45,7 @@ export default function Counter() {
   return (
     <section className="modal-main">
       <div className="modalBody">
-        <h1>Sylwester dla Singli rozpoczyna się za:</h1>
+        <h1>Wielkanoc dla Singli rozpoczyna się za:</h1>
         <div className="countdown-el countdown-container">
           <div className="days-c">
             <p className="big-text" id="days">
@@ -72,7 +72,7 @@ export default function Counter() {
             <span>sekundy</span>
           </div>
         </div>
-        <Link to="/newyear">
+        <Link to="/easter">
           <button className="button-newyears">
             <span>SPRAWDŹ OFERTE</span>
           </button>
