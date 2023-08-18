@@ -9,7 +9,7 @@ import Counter from "../components/Counter";
 export const Home = () => {
   return (
     <>
-      <Counter />
+      {/* <Counter />*/}
       <Hero>
         <Banner title="Dom wypoczynkowy" subtitle="słoneczko - jak u mamy">
           <Link to="/rooms" className="btn-primary">
