@@ -1,30 +1,42 @@
 import React from "react";
-import GoogleMapReact from "google-map-react";
-import LocationPin from "./LocationPin";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { GOOGLE_MAP_API_KEY } from "../config";
+const mapContainerStyle = {
+  height: "600px",
+  width: "100%",
+};
 
-const Map = ({ location, zoomLevel }) => {
+const position = {
+  lat: 49.67484,
+  lng: 20.05593,
+};
+
+const onLoad = (marker) => {
+  console.log("marker: ", marker);
+};
+
+const OPTIONS = {
+  minZoom: 4,
+  maxZoom: 18,
+};
+export const Map = () => {
   return (
-    <div className="map">
-      <h2 className="map-h2">Sprawdź gdzie nas szukać</h2>
-
-      <div className="google-map">
-        <GoogleMapReact
-          bootstrapURLKeys={{
-            key: "AIzaSyD8LQPqDI8Xzg64ABVmSlTaVrjuOotSZ58",
-            v: "3.31",
-          }}
-          defaultCenter={location}
-          defaultZoom={zoomLevel}
-        >
-          <LocationPin
-            lat={location.lat}
-            lng={location.lng}
-            text={location.address}
-          />
-        </GoogleMapReact>
-      </div>
-    </div>
+    <LoadScript googleMapsApiKey={GOOGLE_MAP_API_KEY}>
+      <GoogleMap
+        id="marker-example"
+        mapContainerStyle={mapContainerStyle}
+        zoom={15}
+        center={position}
+        options={OPTIONS}
+        onZoomChanged
+      >
+        <Marker
+          onLoad={onLoad}
+          position={position}
+          label="Słoneczko Jak u Mamy"
+        />
+      </GoogleMap>
+    </LoadScript>
   );
 };
 
-export default Map;
