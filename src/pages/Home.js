@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
 import Counter from "../components/Counter";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
       </Hero>
       <Services />
       <FeaturedRooms />
+      <ScrollToTopBtn/>
     </>
   );
 };

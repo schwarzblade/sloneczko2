@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import RoomsContainer from "../components/RoomsContainer";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 export const Rooms = () => {
   return (
@@ -15,6 +16,7 @@ export const Rooms = () => {
         </Banner>
       </Hero>
       <RoomsContainer />
+      <ScrollToTopBtn/>
     </>
   );
 };
