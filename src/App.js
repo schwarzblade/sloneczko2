@@ -12,21 +12,24 @@ import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
-
+import ScrollToTop from "./components/ScrollToTop";
 import NewYear from "./pages/NewYear";
+import Easter from "./pages/Easter";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <Navbar />
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/rooms/" component={Rooms} />
           <Route exact path="/rooms/:slug" component={SingleRoom} />
           <Route exact path="/contact/" component={Contact} />
           <Route exact path="/aboutus" component={AboutUs} />
-          <Route exact path="/newyear" component={NewYear} />
+          {/* <Route exact path="/newyear" component={NewYear} /> */}
+          {/* <Route exact path="/easter" component={Easter} /> */}
           <Route component={Error} />
         </Switch>
         <Footer />

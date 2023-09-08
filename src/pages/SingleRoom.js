@@ -6,6 +6,7 @@ import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -97,6 +98,7 @@ export default class SingleRoom extends Component {
             <h6> {balcony && "Pokój Z balkonem"}</h6>
           </article>
         </div>
+        <ScrollToTopBtn/>
       </>
     );
   }

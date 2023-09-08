@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
 import Counter from "../components/Counter";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 export const Home = () => {
   return (
     <>
-      <Counter />
+      {/* <Counter />*/}
       <Hero>
         <Banner title="Dom wypoczynkowy" subtitle="słoneczko - jak u mamy">
           <Link to="/rooms" className="btn-primary">
@@ -19,6 +20,7 @@ export const Home = () => {
       </Hero>
       <Services />
       <FeaturedRooms />
+      <ScrollToTopBtn/>
     </>
   );
 };
