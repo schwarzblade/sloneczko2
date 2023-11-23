@@ -19,7 +19,7 @@ export const Map = () => {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: ""
+    googleMapsApiKey: "tu klucz"
   })
 
   const [map, setMap] = React.useState(null)
