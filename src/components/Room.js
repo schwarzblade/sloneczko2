@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import WSPGallery from "./WSPGallery";
 
 export default function Room({ room }) {
   const { name, slug, images, price } = room;

@@ -7,8 +7,8 @@ import ScrollToTopBtn from "../components/ScrollToTopBtn";
 function Contact() {
   return (
     <>
-      <ContactForm />;
-      <Map location={location} zoomLevel={15} />
+      <ContactForm/>
+      <Map/>
       <ScrollToTopBtn/>
     </>
   );

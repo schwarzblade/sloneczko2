@@ -15,6 +15,10 @@ import AboutUs from "./pages/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
 import NewYear from "./pages/NewYear";
 import Easter from "./pages/Easter";
+import { Swieta } from "./pages/Swieta";
+import OfertaSylwesterSwieta from "./components/OfertaSylwesterSwieta";
+import { Sylwester } from "./pages/Sylwester";
+
 
 function App() {
   return (
@@ -30,6 +34,8 @@ function App() {
           <Route exact path="/aboutus" component={AboutUs} />
           {/* <Route exact path="/newyear" component={NewYear} /> */}
           {/* <Route exact path="/easter" component={Easter} /> */}
+          {/* <Route exact path="/swieta" component={Swieta} />
+          <Route exact path="/sylwester" component={Sylwester} /> */}
           <Route component={Error} />
         </Switch>
         <Footer />

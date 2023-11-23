@@ -1,6 +1,6 @@
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import { GOOGLE_MAP_API_KEY } from "../config";
+import { GoogleMap,  Marker, useJsApiLoader } from "@react-google-maps/api";
+
 const mapContainerStyle = {
   height: "600px",
   width: "100%",
@@ -11,32 +11,47 @@ const position = {
   lng: 20.05593,
 };
 
-const onLoad = (marker) => {
-  console.log("marker: ", marker);
-};
-
 const OPTIONS = {
-  minZoom: 4,
-  maxZoom: 18,
-};
+  minZoom: 1,
+  maxZoom: 16,
+}
 export const Map = () => {
-  return (
-    <LoadScript googleMapsApiKey={GOOGLE_MAP_API_KEY}>
+
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyDFMToVKtM2vBGv6GYhRKs6p48HA_AFyyI"
+  })
+
+  const [map, setMap] = React.useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    // This is just an example of getting and using the map instance!!! don't just blindly copy!
+    const bounds = new window.google.maps.LatLngBounds(position);
+    map.fitBounds(bounds);
+
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return isLoaded ? (
       <GoogleMap
-        id="marker-example"
         mapContainerStyle={mapContainerStyle}
-        zoom={15}
         center={position}
-        options={OPTIONS}
-        onZoomChanged
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+        options = {OPTIONS}
       >
-        <Marker
-          onLoad={onLoad}
+        { /* Child components, such as markers, info windows, etc. */ }
+          <Marker
           position={position}
           label="Słoneczko Jak u Mamy"
         />
       </GoogleMap>
-    </LoadScript>
-  );
-};
+  ) : <></>
+}
 
+
+export default React.memo(Map)

@@ -7,6 +7,7 @@ import StyledHero from "../components/StyledHero";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import ScrollToTopBtn from "../components/ScrollToTopBtn";
+import WSPGallery from "../components/WSPGallery";
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -45,6 +46,7 @@ export default class SingleRoom extends Component {
     } = room;
 
     const [mainImg, ...defaultImg] = images;
+    const imagesForGallery = defaultImg.map((item) => ({img: item}));
     return (
       <>
         <StyledHero img={mainImg}>
@@ -56,7 +58,7 @@ export default class SingleRoom extends Component {
         </StyledHero>
         <section className="single-room ">
           <div className="single-room-images ">
-            {defaultImg.map((item, index) => {
+            {/* {defaultImg.map((item, index) => {
               return (
                 <Zoom>
                   {" "}
@@ -69,7 +71,8 @@ export default class SingleRoom extends Component {
                   />
                 </Zoom>
               );
-            })}
+            })} */}
+            <WSPGallery galleryImages={imagesForGallery}/>
           </div>
         </section>
         <div className="single-room-info">
@@ -93,6 +96,7 @@ export default class SingleRoom extends Component {
               Ilośc mijesc:
               {capacity > 1 ? `${capacity} osoby` : `${capacity} osobowy`}
             </h6>
+            <h6>{size && `Powierzchnia pokoju ${size} m²`}</h6>
             <h6>Zwierzęta: {pets ? "dozwolone " : "nie dozwolone"}</h6>
             <h6>Śniadanie: {breakfast && "Za dopłatą 20 PLN "}</h6>
             <h6> {balcony && "Pokój Z balkonem"}</h6>
