@@ -42,8 +42,7 @@ import room6_4 from "./images/pokoje/6/6_4.jpg";
 import room6_5 from "./images/pokoje/6/6_5.jpg";
 import room6_6 from "./images/pokoje/6/6_6.jpg";
 import room6_7 from "./images/pokoje/6/6_7.jpg";
-import room6_8 from "./images/pokoje/6/6_8.jpg";
-import room6_9 from "./images/pokoje/6/6_9.jpg";
+
 
 // 7
 
@@ -514,20 +513,20 @@ export default [
             },
           },
         },
-        {
-          fields: {
-            file: {
-              url: room6_8,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room6_9,
-            },
-          },
-        },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: room6_8,
+        //     },
+        //   },
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: room6_9,
+        //     },
+        //   },
+        // },
       ],
     },
   },
@@ -540,7 +539,7 @@ export default [
       slug: "7",
       type: "2-osobowy",
       price: 180,
-      // size: 16,
+      size: 15,
       capacity: 2,
       pets: true,
       breakfast: true,
@@ -609,7 +608,7 @@ export default [
         "Duze łózka z wygodnymi materacami",
         "Antyalergiczna pościel",
       ],
-      balcony: true,
+      balcony: false,
       images: [
         {
           fields: {
@@ -778,7 +777,7 @@ export default [
       // size: 120,
       capacity: 2,
       pets: true,
-      breakfast: false,
+      breakfast: true,
       featured: true,
       description:
         "Pokój nr 11 wyposażony jest w 1 2-osobowe łóżko(małżeńskie) ,przestrony, nowoczesnie urzadznoym pokojem z duża łązienką. Posiada TV, czajnik, WI-FI.",
